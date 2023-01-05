@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div id="form-container">
+
+  <div id="card-front">
+    <div id="shadow"></div>
+    <div id="image-container">
+      <span id="card-image">
+        </span>
+    </div>
+
+    <input type="text" id="card-holder" placeholder="Holder of card" />
+    <input type="text" id="card-number" placeholder="Number of card" length="16">
+    <div id="cardholder-container">
+    </div>
+
+    <div id="exp-container">
+      <label for="card-exp">
+          VALID THRU
+        </label>
+      <input id="card-month" type="text" placeholder="MM" length="2">
+      <input id="card-year" type="text" placeholder="YY" length="2">
+    </div>
+        <div id="cvc-container">
+      <input id="card-cvc" placeholder="CVC" type="text" min-length="3" max-length="4">
+    </div>
+  </div>
+
+  <div id="card-back">
+    <div id="card-stripe"></div>
+  </div>
+
+  <button type="button" id="card-btn">Send</button>
+
+</div>
+</body>
+</html>
